@@ -33,7 +33,9 @@ public static void methodTwo()
 }
 
 
+D:      D:      D:      D:      D:      D:      D:      D:      D:      D:      D:      D:      D:      D:
 3. No ternary operators (? and : ). Always use the common if-statement structure.
+^^^^^^ ALWAYS TERNARY WTF HENRY SRSLY GOD DAMN IT TERNARY FTWWWWWWWWWWWW COME ON GOD SHT FCK!!!!!!!^^^^^^^
 
 
 4. Even if a method, loop, or if-statement only use one line, always use curly brackets.
