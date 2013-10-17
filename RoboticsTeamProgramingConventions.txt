@@ -232,6 +232,32 @@ public static void someMethod(/*A single space*/boolean someBoolean/*A single sp
 15. Try and Catch are NEVER allowed. Fix the problem, don’t compensate for it.
 
 
+16. With Switch statements, you have each case tabbed over once from the switch, and the statements after the case are tabbed over once from the space Also, there should be an empty line between a case’s code and the case below it.
+
+
+
+
+
+
+
+
+
+
+
+
+Example:
+
+
+switch ( someInt )
+{
+        case 0:
+                (Code here)
+        
+        case 1:
+                (Code here)
+}
+
+
 Naming Conventions:
 
 
