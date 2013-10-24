@@ -126,7 +126,7 @@ public class ExampleClass
         private int acceleration //The acceleration of the object.
 
 
-        private Talon motorOne //A Object variable example
+        private Talon motorOne //An Object variable example
 }
 
 
