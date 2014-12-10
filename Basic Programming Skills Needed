@@ -1,0 +1,17 @@
+The following is a list of what all programmers should be able to do:
+
+Write well developed classes and instantiate them
+Be comfortable with if/else, switch, while, and for blocks of code
+Be able to use basic Java classes( ie: String, Integer, Object, ArrayList, etc. )
+A good understanding of inheritance and abstract classes and interfaces
+Be able to handle exceptions and deal with errors in code
+Have a basic understanding of algorithms and recursion
+Be able to read and use an API
+
+Along with this, all programmers should be familliar with the following basic Robotics concepts:
+
+The API - this is in another respository
+A basic understanding of how to use and access github
+Digital vs Analog inputs
+The basic hardware( ie: CRio, Digital Sidecar, speed controllers, and motors, etc. )
+Basic understanding of important classes( Talon, Victor )
