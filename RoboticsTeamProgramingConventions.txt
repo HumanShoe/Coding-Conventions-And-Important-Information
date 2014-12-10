@@ -42,13 +42,13 @@ public static void methodTwo()
 Example:
 
 
-if ( someBoolean )
+if( someBoolean )
 {
         (Code here)
 }
 
 
-while ( someOtherBoolean )
+while( someOtherBoolean )
 {
         (Code here)
 }
@@ -62,7 +62,6 @@ Example:
 public static int exampleMethod( int num )
 {
         num *= 5;
-
 
         return num; // Do not add anything else to this line
 }
@@ -90,14 +89,14 @@ public class ExampleClass
         public static void methodOne()
         {
                 //Description of loop.
-                while ( someBoolean )
+                while( someBoolean )
                 {
                         (Code here) //Description of Code
                 }
 
 
                 //Description of if-statement.
-                if ( someOtherBoolean )
+                if( someOtherBoolean )
                 {
                         (Code here) //Description of Code
                 }
@@ -188,7 +187,7 @@ public static int exampleMethod( int x, int y )
 }
 
 
-12.  In all loops and if-statements, place one space between the statement and the left parenthesis. 
+12.  In all loops and if-statements, do NOT place a space between the statement and the left parenthesis. 
 
 
 
@@ -198,11 +197,11 @@ public static int exampleMethod( int x, int y )
 Example:
 
 
-if/*A single space*/( someBoolean )
+if/*No space here*/( someBoolean )
 {
         (Code here)
 }
-while/*A single space*/( someOtherBoolean )
+while/*No space here*/( someOtherBoolean )
 {
         (Code here)
 }
@@ -216,9 +215,9 @@ Example:
 
 public static void someMethod(/*A single space*/boolean someBoolean/*A single space*/ )
 {
-        while (/*A single space*/someBoolean/*A single space*/)
+        while(/*A single space*/someBoolean/*A single space*/)
         {
-                if (/*A single space*/someBoolean/*A single space*/)
+                if(/*A single space*/someBoolean/*A single space*/)
                 {
                         someBoolean = false;
                 }
@@ -248,7 +247,7 @@ public static void someMethod(/*A single space*/boolean someBoolean/*A single sp
 Example:
 
 
-switch ( someInt )
+switch( someInt )
 {
         case 0:
                 (Code here)
@@ -274,4 +273,5 @@ Naming Conventions:
 
 
   e) When coming up with names, always assume the person reading your code has no idea what the code should do.
+  
   f) Instance variables for classes and interfaces should have an underscore(“_”) before the actual name.
