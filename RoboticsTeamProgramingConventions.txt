@@ -25,8 +25,8 @@ Example:
 public static void methodOne()
 {
         (Code here)
- }
-//Empty line here
+}
+//      Empty line here
 public static void methodTwo()
 {
         (Code here)
@@ -62,8 +62,8 @@ Example:
 public static int exampleMethod( int num )
 {
         num *= 5;
-
-        return num; // Do not add anything else to this line
+        
+        return num;     //      Do not add anything else to this line
 }
 
 
@@ -74,33 +74,37 @@ Example:
 
 
 /**
-*Javadoc info here
-*/
+ * Javadoc info here
+ */
 public class ExampleClass
 {
-        //Description of instance variables
-        boolean someBoolean;
-        boolean someOtherBoolean;
+
+        //      Description of instance variables
+        private boolean someBoolean;
+        private boolean someOtherBoolean;
 
 
-/**
-*Javadoc info here
+        /**
+         * Javadoc info here
          */
         public static void methodOne()
         {
-                //Description of loop.
+        
+                //      Description of loop.
                 while( someBoolean )
                 {
-                        (Code here) //Description of Code
+                        (Code here)     //  Description of Code
                 }
 
 
-                //Description of if-statement.
+                //      Description of if-statement.
                 if( someOtherBoolean )
                 {
-                        (Code here) //Description of Code
+                        (Code here)     //  Description of Code
                 }
+                
         }
+        
 }
 
 
@@ -109,23 +113,23 @@ public class ExampleClass
 7. The iteration variable in for loops should be named ‘i’. If you have nested for loops, then the variable should be named ‘j’, then ‘k’, then ‘l’, etc. You probably should not have more than 3 nested for loops though.
 
 
-8. All instance variables must be written at the top of a class, method, or interface. Group variables by their use and place comment above the group of variables to describe what the group of variables are used for or place comment on the same line as a variable to describe the variable individually. Groups of variables should be separated by a space. All primitive variables should be placed above object variables. All instance variables within a class should be private variables. Variables should ALWAYS have descriptive names. See naming conventions for more help.
+8. All instance variables must be written at the top of a class or interface. Group variables by their use and place comment above the group of variables to describe what the group of variables are used for or place comment on the same line as a variable to describe the variable individually. Groups of variables should be separated by a space. All primitive variables should be placed above object variables. All instance variables within a class should be private variables. Variables should ALWAYS have descriptive names. See naming conventions for more help.
 
 
 Example:
 
-
 public class ExampleClass
 {
-        //The position of the object.
+
+        //      The position of the object.
         private int xPosition;
         private int yPosition;
 
+        private int acceleration;        //      The acceleration of the object.
 
-        private int acceleration //The acceleration of the object.
 
-
-        private Talon motorOne //An Object variable example
+        private Talon motorOne;  //      An Object variable example
+        
 }
 
 
@@ -137,10 +141,17 @@ Example:
 
 public void someMethod()
 {
-        while(aBoolean)//Do NOT ever use aBoolean == true
-                if(!anotherBoolean)//Do NOT use anotherBoolean == false
-                        //Some Code
-
+        while( aBoolean )       //      Do NOT ever use aBoolean == true
+        {
+        
+                if( !anotherBoolean )   //      Do NOT use anotherBoolean == false
+                {
+                
+                        (Some Code)
+                        
+                }
+                
+        }
 
 }
 
@@ -153,13 +164,17 @@ public void someMethod()
 Example:
 public class exampleClass
 {
+
         public void doSomeMath()
         {
-                int someVariable = 3
+        
+                int someVariable = 3;
                 int anotherVariable = 20;
                 someVariable += anotherVariable;
                 anotherVariable++;
+                
         }
+        
 }
 
 
@@ -171,27 +186,24 @@ Example:
 
 public static int exampleMethod( int x, int y )
 {
-        //The returned variable
+
+        //      The returned variable.
         int sum;
 
 
-        //Multiplies variables by 2
+        //      Multiplies variables by 2.
         x *= 2;
         y *= 2;
         
-        //Adds variables together
+        //      Adds variables together.
         sum = x + y;
 
-
         return sum;
+        
 }
 
 
 12.  In all loops and if-statements, do NOT place a space between the statement and the left parenthesis. 
-
-
-
-
 
 
 Example:
@@ -199,29 +211,37 @@ Example:
 
 if/*No space here*/( someBoolean )
 {
+
         (Code here)
+        
 }
 while/*No space here*/( someOtherBoolean )
 {
+
         (Code here)
+        
 }
 
 
 13. Parameters in methods and booleans in if-statements and loops should have a space in front and behind it.
 
-
 Example:
-
 
 public static void someMethod(/*A single space*/boolean someBoolean/*A single space*/ )
 {
+
         while(/*A single space*/someBoolean/*A single space*/)
         {
+        
                 if(/*A single space*/someBoolean/*A single space*/)
                 {
+                
                         someBoolean = false;
+                        
                 }
+                
         }
+        
 }
 
 
@@ -233,44 +253,32 @@ public static void someMethod(/*A single space*/boolean someBoolean/*A single sp
 
 16. With Switch statements, you have each case tabbed over once from the switch, and the statements after the case are tabbed over once from the space Also, there should be an empty line between a case’s code and the case below it.
 
-
-
-
-
-
-
-
-
-
-
-
 Example:
-
 
 switch( someInt )
 {
+
         case 0:
                 (Code here)
         
         case 1:
                 (Code here)
+                
+        default:
+                (Code here)
+                
 }
 
 
 Naming Conventions:
 
-
   a) All constants should be written in all capital letters.
-
 
   b) Always use camelCase for all names except for classes and interfaces.
 
-
   c) All class and interface names are Capitalized.
 
-
   d) When naming interfaces, classes, methods, and variables, use descriptive names. (i.e. Instead of naming a variable x, you would name it xPosition)
-
 
   e) When coming up with names, always assume the person reading your code has no idea what the code should do.
   
